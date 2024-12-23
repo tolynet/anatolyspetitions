@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Search Petitions</title>
+  </head>
+  <body>
+    <h1>Search Petitions</h1>
+    <form method="get" th:action="@{/petitions/search-results}">
+      <label for="search">Search for petitions:</label>
+      <input type="text" id="search" name="search" />
+      <button type="submit">Search</button>
+    </form>
+    <br />
+    <a th:href="@{/petitions/view}">Petitions</a>
+    <br />
+    <a th:href="@{/petitions/create}">Create a New Petition</a>
+    <br />
+    <a th:href="@{/petitions/search}">Search Petition</a>
+    <br />
+  </body>
+</html>
